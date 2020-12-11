@@ -2,7 +2,7 @@
 Sensitive user data should be protected at all times. Failure to do this presents a danger for users. Hackers can retrieve such data to exploit users.
 
 ## Example
-In the page <a href="http://192.168.43.251/index.php?page=recover">recover</a> we are presented with a password recovery page. Seeing the button you're pushed to inspect and see what data is being sent.
+In <a href="http://192.168.43.251/index.php?page=recover">recover</a> we are presented with a password recovery page. Seeing the button you're pushed to inspect and see what data is being sent.
 <img src="https://github.com/PhethulwaziD/Darkly/blob/master/Sensitive_Data_Exposure/Resources/email.png" />
 
 ## Exploit
