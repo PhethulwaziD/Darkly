@@ -1,4 +1,4 @@
-# Form
+# Form_Value_Manipulation
 Being able to manipulate a form field is no thing it's as simple as abc, if that's a thing. Point is this is a real vulnerability, and if not handled properly it can cause some serious damage.
 
 ## Example
@@ -12,6 +12,6 @@ For example, in <a href="http://192.168.43.251/index.php?page=survey">survey</a>
 ## Remedy
 * I hate to say this but it's something we cannot control, atleast from the client side. On the hand by sanitizing every input we can be able to control data that is being received.
 
-# Resources
+## Resources
 * https://totaluptime.com/form-field-manipulation/
 * https://owasp.org/www-community/attacks/Web_Parameter_Tampering
