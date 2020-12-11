@@ -20,4 +20,4 @@ For this part we will be making use of out terminal. We'll use the same url like
 * Similar to direct SQL_Injection this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input. sqlmap uses similar these vulnerabilities to exploit and so without them it will not work.
 
 # Resources
-* https://www.youtube.com/watch?v=ciNHn38EyRc
+* z
