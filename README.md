@@ -14,8 +14,8 @@ You will be able to discover OWASP, which is, no more and no less, the biggest w
 You will also understand what a lot of frameworks do in an automatic and completely transparent way for you
 
 ## General guidelines
-• This project will only be corrected by humans.
-• You may be required, during your defense, to prove your results. You have to prepare for it.
-• You will need to use a virtual machine (i386) to validate this project. Once your machine is started with the
+* This project will only be corrected by humans.
+* You may be required, during your defense, to prove your results. You have to prepare for it.
+* You will need to use a virtual machine (i386) to validate this project. Once your machine is started with the
 ISO supplied with the subject, if everything is well con fi gured, you will have a simple prompt with an IP:
 
