@@ -15,7 +15,7 @@ From here on out we can genlty manipulate the database and ask it to give the na
 * 1 UNION (SELECT COLUMN_NAME, 1 FROM information_schema.columns );--
 
 ### One of these tables is users
-Table : users
+> Table : users
 > Colunm : user_id
 > Colunm : first_name
 > Colunm : last_name
