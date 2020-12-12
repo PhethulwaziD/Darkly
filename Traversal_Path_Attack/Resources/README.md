@@ -5,11 +5,8 @@ A path traversal attack (also known as directory traversal) aims to access files
 By Appending "../" to http://192.168.43.251/index.php?page= we see that such an attack is possible.
 
 ## Exploit
-* Our exploit would be findind malicious information that we can use to exploit either the users of the page or the admin.
-This is archieved through this url which presents to us our flag.
+* Being afforded to go through system can be quite bad. We can find information that we can use to exploit either the users of the page or the admin. We already know that the OS being used is linux and so we can go through some well known folders such as http://192.168.43.251/index.php?page=../../../../../../../etc/passwd Here we get our flag: b12c4b2cb8094750ae121a676269aa9e2872d07c06e429d25a63196ec1c8c1d0.
 
-## Retrieved Data
-* flag: b12c4b2cb8094750ae121a676269aa9e2872d07c06e429d25a63196ec1c8c1d0
 
 ## Remedy
 * Don’t store sensitive configuration files inside the web root

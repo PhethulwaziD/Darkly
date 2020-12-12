@@ -10,8 +10,8 @@ For this section we are going to use nikto; nikto is a programme that searches f
 Such in itself is useless unless your access control is broken, we can test that for this website by going to <a href="http://192.168.43.251/robots.txt">admin</a> which is the login page for the admin. As a normal user am not suppose to have acces to this page, but I do and I have the login credentials of the admin which we got from htpasswd which are root:dragron(decrypted md5 password). If we login we get our flag:d19b4823e0d5600ceed56d5e896ef328d7a2b9e7ac7e80f4fcdb9b10bcb3e7ff. 
 
 
-## Remedy store  
-* Do not super user data on the server
+## Remedy  
+* Do not store super user data on the server
 * Restrict access for normal users
 
 ## Resources
