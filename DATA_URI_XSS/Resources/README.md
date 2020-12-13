@@ -26,7 +26,7 @@ We can append that to the src as:
 This now allows us to get our flag:928d819fc19405ae09921a2b71227bd9aba106f9d2d37ac412e9e5a750f1506d.
 
 ## Remedy
-* Sanitise all client side input to make, this help in avoiding such attacks
+* Sanitise all client side input to make avoid such attacks.
 
 ## Resources
 * https://stackabuse.com/encoding-and-decoding-base64-strings-in-python/

