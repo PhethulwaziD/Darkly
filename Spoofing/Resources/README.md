@@ -12,7 +12,8 @@ In the footer of each page there is a link to © BornToSec, on clicking that, we
 ## Exploit
 By using curl we can set a referer head to link our web page we can get our using grep to grab our our flag
 * On your terminal
-```bash curl --referer "https://www.nsa.gov/" --user-agent "ft_bornToSec" http://192.168.43.251/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c | grep "flag" ```
+
+``` curl --referer "https://www.nsa.gov/" --user-agent "ft_bornToSec" http://192.168.43.251/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c | grep "flag" ```
 
 ## Remedy
 *  There's no definitive way of determing the URL Referrer.
